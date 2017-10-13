@@ -12,20 +12,22 @@ using namespace std;
 int main()
 {
 	printf("Type count of km \n");
-	double yards = 0, dyums = 0;
-	int kilometers;
-	scanf("%d", &kilometers); // %d - для ввода целых, %f - для ввода вещественных
+	double yards = 0.0, dyums = 0.0/*, YARDS = 1093.61, DYUMS = 39370.08*/;
+	double kilometers;
+	scanf("%f", &kilometers); // %d - для ввода целых, %f - для ввода вещественных
 
 
 	//  Получение ярдов
 	yards = kilometers * YARDS;
-	printf("%f", &yards);
+	printf("Count of yards = ");
+	printf("%f", yards);
 	printf("\n");
 
 
 	//  Получение дюймов
 	dyums = kilometers * DYUMS;
-	printf("%f", &dyums);
+	printf("Count of dyums = ");
+	printf("%f", dyums);
 	printf("\n");
 
 
